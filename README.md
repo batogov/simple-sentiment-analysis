@@ -1,5 +1,7 @@
 # Sentiment Analysis
 
+Read the [Russian version](./README_RU.md) of the document 🇷🇺
+
 ## Problem description
 
 Make a classifier of the emotional tonality of short text snippets (for example, tweets). The algorithm should be able to classify messages into two classes: messages with positive emotionality and messages with negative emotionality.
