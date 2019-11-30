@@ -1,20 +1,23 @@
-## Задача
+# Sentiment Analysis
 
-Сделать классификатор тональности коротких текстовых сообщений (например, твитов). Алгоритм должен уметь классифицировать сообщения на два класса: сообщения с положительной эмоциональной окраской и сообщения с отрицательной окраской.
+## Problem description
 
-## Используемые инструменты и библиотеки
+Make a classifier of the emotional tonality of short text snippets (for example, tweets). The algorithm should be able to classify messages into two classes: messages with positive emotionality and messages with negative emotionality.
+
+## Tools and libraries
+
 * Python 3;
-* Pandas для работы с данными;
-* Scikit-Learn для токенизации, кросс-валидации и применения алгоритмов машинного обучения;
-* PyMorphy2 для лемматизации русских слов.
+* Pandas for working with data;
+* Scikit-Learn for tokenization, cross-validation and machine learning algorithms;
+* PyMorphy2 for lemmatization of Russian words.
 
-## Обучающая выборка
+## Training set
 
-Создание обучающей выборки в задачах такого типа является сложным и долгим мероприятием. Необходимо большое количество времени и помощь большого количества людей (асессоров) для того, чтобы создать и разметить даже небольшую выборку.
+Creating a training sample is a complex and time-consuming activity. It takes a lot of time and the help of a lot of people (assessors) to create and classify even a small training set.
 
-Я буду пользоваться [готовой выборкой](http://study.mokoron.com/), состоящей приблизительно из 225 тысяч размеченных твитов (положительная или отрицательная окраска).
+I will use the [ready set](http://study.mokoron.com/) consisting of approximately 225 thousand classified tweets (positive or negative emotionality).
 
-## Работа с выборкой
+## Working with set
 
 Выборка содержит в себе не только тексты твитов и метки классов, но и большое количество дополнительной информации (даты публикаций, имена пользователей, количество ретвитов и т.д.). В контексте данной задачи эта информация не нужна, поэтому оставляем в датасете только тексты и метки.
 
