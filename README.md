@@ -32,17 +32,17 @@ Next, process the tweet lines:
 
 Save the processed dataset to a new cleaned_data file.csv. We will continue to work with it.
 
-## Построение моделей
+## Model building
 
-Задача заключается в том, чтобы выбрать сочетание классификатора, метода векторизации, схемы n-грамм и прочие параметры таким образом, чтобы максимизировать качество классификации.
+The main problem is to choose a combination of classifier, vectorization method, n-gram scheme and other parameters in such a way as to maximize the quality of classification.
 
-Я выбрал две наиболее подходящие (по моему мнению) модели: наивный байесовский классификатор и линейный классификатор (минимизация с помощью стохастического градиентного спуска). Иногда для подобного рода задач используют SVM, но он крайне медленно работает на большом количестве объектов и признаков. Логические методы классификации и вовсе не рассматриваются, так как совершенно не подходят к данной задаче.
+I chose the two most suitable (for my opinion) models: the naive Bayesian classifier and the linear classifier (minimization by stochastic gradient descent). Sometimes SVM is used for this kind of problems, but it is extremely slow on a large number of objects and features. Logical methods of classification are not considering, because they do not fit this problem at all.
 
-Байесовский классификатор особо не нуждается в подборе параметров, а вот параметры линейной модели я буду подбирать по сетке.
+The Bayesian classifier does not need much selection of parameters, but the parameters of the linear model I will select on the grid.
 
-Так же я буду пробовать два метода векторизации текстовых данных: Count Vectorizer и TF-IDF Vectorizer. 
+I will also try two methods of vectorizing text data: Count Vectorizer and TF-IDF Vectorizer.
 
-Последнее, что нужно будет оптимально подобрать – схему n-грамм. Обычно для таких задач используют схемы с униграммными, биграмными или триграммными признаками, а также их совместные комбинации.
+In the end, you will need to choose the optimal scheme of n-grams. Typically, schemes with unigram, bigram or trigram features (and their combinations) are used for such problems.
 
 ## Лучшая модель
 
