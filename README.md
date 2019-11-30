@@ -19,18 +19,18 @@ Creating a training sample is a complex and time-consuming activity. It takes a 
 
 I will use the [ready set](http://study.mokoron.com/) consisting of approximately 225 thousand classified tweets (positive or negative emotionality).
 
-## Working with set
+## Working with training set
 
-Выборка содержит в себе не только тексты твитов и метки классов, но и большое количество дополнительной информации (даты публикаций, имена пользователей, количество ретвитов и т.д.). В контексте данной задачи эта информация не нужна, поэтому оставляем в датасете только тексты и метки.
+The training set contains not only the texts of tweets and class tags, but also a large amount of additional information (publication dates, usernames, number of retweets, etc). In the context of this task, this information is not needed, so we leave only texts and labels in the dataset.
 
-Далее обработаем строки твитов. А именно:
+Next, process the tweet lines:
 
-* Удалим английские слова;
-* Удалим всю пунктуацию (в коротких текстах твитов она не несёт какую-либо смысловую нагрузку);
-* Удалим из твитов имена пользователей, метки о ретвитте (RT) и ссылки;
-* Приведём все слова к нижнему регистру и с помощью модуля PyMorphy2 произведём лемматизацию слов.
+* Delete all English words;
+* Remove all punctuation (it does not contain any semantic);
+* Remove all usernames, tags about retweet (RT) and links;
+* Transform all words to lowercase and use the PyMorphy2 module to lemmatize words.
 
-Сохраним обработанный датасет в новый файл _cleaned_data.csv_. Дальше работать будем уже с ним.
+Save the processed dataset to a new cleaned_data file.csv. We will continue to work with it.
 
 ## Построение моделей
 
