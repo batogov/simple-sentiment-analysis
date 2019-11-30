@@ -44,13 +44,13 @@ I will also try two methods of vectorizing text data: Count Vectorizer and TF-ID
 
 In the end, you will need to choose the optimal scheme of n-grams. Typically, schemes with unigram, bigram or trigram features (and their combinations) are used for such problems.
 
-## Лучшая модель
+## The best model
 
-По результатам валидации, лучшей оказалась следующая модель:
+According to the results of validation, the following model was the best:
 
-* Схема n-грамм: **(1, 3)** (униграммы + биграммы + триграммы);
+* N-gram scheme: **(1, 3)** (unigrams + bigrams + trigrams);
 * Vectorizer: **TF-IDF**;
-* Тип модели: **линейная модель**;
-* Параметры модели: **penalty – l2, alpha – 0.000001, loss – log**.
+* Model type: **linear model**;
+* Model parameters: **penalty-l2, alpha-0.000001, loss-log**.
 
-Её результат оказался ≈ 0.75.
+It result was ≈ 0.75.
